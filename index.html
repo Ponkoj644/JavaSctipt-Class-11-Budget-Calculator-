@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Budget Calculator | JavaScript Class 11</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrapt CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- HTML form start -->
+    <div class="form-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 offset-lg-3">
+            <div class="main-form text-white">
+              <h1 class="text-center">Budget Calculator</h1>
+              <h2 class="text-center mb-4">
+                Income : <span id="income">27500</span> Tk
+              </h2>
+
+              <!-- Form Part start  -->
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="rent"
+                  placeholder="Rent"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="food"
+                  placeholder="Food"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="utilities"
+                  placeholder="Utilities"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="insurance"
+                  placeholder="Insurance"
+                />
+              </div>
+
+              <!-- Error message div -->
+              <div id="error-text"></div>
+
+              <button
+                type="submit"
+                class="btn btn-warning mt-3"
+                id="calculate-button"
+              >
+                Calculate
+              </button>
+              <!-- Form Part end -->
+            </div>
+            <!--Summary div -->
+            <div id="form-data" class="mt-4 main-form text-white">
+              <h1 class="text-center">Summary</h1>
+              <h3>Total Expenses: <span id="expenses"></span> Tk</h3>
+              <h3>Balance: <span id="balance"></span> Tk</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HTML form end -->
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
