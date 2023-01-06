@@ -28,7 +28,7 @@ calculateButton.addEventListener("click", function () {
     utilitiesInput.value = "";
     insuranceInput.value = "";
   } else {
-    errorText.innerHTML = `<p>Please enter a valid number to Caculate</p>`;
+    errorText.innerHTML = `<p>Please enter a valid number to Calculate</p>`;
   }
   // Calculation of total cost as "cost" and remaining balance as "balance"
   if (rentValue && foodValue && utilitiesValue && insuranceValue >= 0) {
